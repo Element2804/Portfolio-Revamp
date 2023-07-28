@@ -7,10 +7,10 @@ const NavTabs = () => {
     <header>
        <nav>
          <h1>William Faries</h1>
-         <NavLink to ="/">Home</NavLink>
-       <NavLink to="about">About</NavLink>
-       <NavLink to="portfolio">About</NavLink>
-       <NavLink to="resume">About</NavLink>
+         <NavLink to ="/">About</NavLink>
+         <NavLink to="portfolio">Portfolio</NavLink>
+         <NavLink to="contact">Contact</NavLink>
+       <NavLink to="resume">Resume</NavLink>
       </nav>
      </header>
     <main>
