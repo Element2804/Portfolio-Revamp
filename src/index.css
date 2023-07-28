@@ -14,7 +14,12 @@ body {
   color: #fff;
   margin: 0;
 }
+
+h2 {
+  font-size: 30px;
+}
 p {
+  font-size: 25px;
   margin: 20px 0;
 }
 button {
@@ -35,10 +40,12 @@ header nav {
   margin: 0 auto;
 }
 header nav h1 {
+  font-size: 25px;
   margin-right: auto;
   border-bottom: 3px solid var(--primary);
 }
 header nav a{
+  font-size: 20px;
   text-decoration: none;
   padding: 6px;
   border-radius: 4px;
@@ -53,7 +60,6 @@ main {
   margin: 40px auto;
 }
 
-/* help layout */
 
 
 /* faq */
