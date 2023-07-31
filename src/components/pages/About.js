@@ -3,9 +3,9 @@ import profile from '../../images/profile.jpeg';
 
 function About() {
   return (
-    <section class="about" id="about_link">
+    <section className="about" id="about_link">
       
-      <img src={ profile } className="profile-picture" alt="profile picture"/>
+      <img src={ profile } className="profile-picture" alt="developer"/>
                
         <h2>About me</h2>
 

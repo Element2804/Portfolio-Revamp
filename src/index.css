@@ -2,7 +2,7 @@
 
 :root {
   --primary: #bc4123;
-  --secondary: #2b3452;
+  --secondary: #267de0;
 }
 body {
   margin: 0;
@@ -11,7 +11,7 @@ body {
   background: var(--secondary);
 }
 * {
-  color: #fff;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -54,21 +54,22 @@ header nav a.active {
   background: var(--primary);
 }
 
+
 /* page content */
 main {
   max-width: 1200px;
   margin: 40px auto;
 }
 
+input {
+  color: black;
+  font-size: 17px;
+}
+form {
+ margin-top: 30px;
+  }
 
-
-/* faq */
-
-
-/* careers list */
-
-
-/* careers details */
-
-
-/* breadcrumbs */
+.person{
+  height: 50%;
+  width: 50%;
+}
