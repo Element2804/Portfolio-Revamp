@@ -1,8 +1,8 @@
 const Resume = () => {
     return ( 
         <section>
-            <h2>Resume Page</h2>
-
+            <h2>Resume</h2>
+        
 
 
             </section>
