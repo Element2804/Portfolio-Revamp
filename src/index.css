@@ -75,12 +75,13 @@ form {
 }
 
 footer{
- position: fixed;
+  display: flex;
+justify-content: center;
+width: 50%;
+position: fixed;
   bottom: 0;
 }
 .github, .stack{
-  display: flex;
-align-items: center;
-justify-content: center;
+  
   font-size: 80px;
 }
