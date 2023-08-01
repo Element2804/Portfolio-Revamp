@@ -73,3 +73,14 @@ form {
   height: 50%;
   width: 50%;
 }
+
+footer{
+ position: fixed;
+  bottom: 0;
+}
+.github, .stack{
+  display: flex;
+align-items: center;
+justify-content: center;
+  font-size: 80px;
+}

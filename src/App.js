@@ -1,32 +1,47 @@
-import "./App.css";
-import { createBrowserRouter, Route, createRoutesFromElements, RouterProvider } from "react-router-dom";
+import {BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 
+import Footer from "./components/Footer";
 
-import NavTabs from "./components/NavTabs";
 // pages
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import Portfolio from "./components/pages/Portfolio";
 import Resume from "./components/pages/Resume";
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
 
-<Route path="/" element={<NavTabs/>} >
-  <Route index element={<About/>}/>
-  <Route path="contact" element={<Contact/>}/>
-  <Route path="portfolio" element={<Portfolio/>}/>
-  <Route path="resume" element={<Resume/>}/>
-</Route>
-  )
-)
+
+
+ 
 
 	
 const App = () => {
   return (  
-     
+     <BrowserRouter>
+     <header>
+      <nav>
+        <h1>William Faries</h1>
+<NavLink to="/">About</NavLink>
+<NavLink to="portfolio">Portfolio</NavLink>
+<NavLink to="contact">Contact</NavLink>
+<NavLink to="resume">Resume</NavLink>
+
+      </nav>
+     </header>
+   <main>
+    <Routes>
+    <Route index element={<About/>}/>
+    <Route path="contact" element={<Contact/>}/>
+    <Route path="portfolio" element={<Portfolio/>}/>
+    <Route path="resume" element={<Resume/>}/>
+  </Routes>
+  </main>
+  <footer>
+    <Footer/>
+  </footer>
+</BrowserRouter>
+
    
-   <RouterProvider router={router}/>
+   
   
    );
 }
