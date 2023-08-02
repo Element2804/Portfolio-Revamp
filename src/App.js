@@ -20,7 +20,7 @@ const App = () => {
      <header>
       <nav>
         <h1>William Faries</h1>
-<NavLink to="">About</NavLink>
+<NavLink to="/">About</NavLink>
 <NavLink to="portfolio">Portfolio</NavLink>
 <NavLink to="contact">Contact</NavLink>
 <NavLink to="resume">Resume</NavLink>
