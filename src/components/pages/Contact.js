@@ -35,7 +35,7 @@ const Contact = () => {
             setErrorMessage('Please enter a valid email address.');
             return;
         }
-       if (!setMessage(message)){
+       if (!setMessage(message = "")){
         setErrorMessage("Message form can't be blank");
         return;
     }
@@ -46,6 +46,7 @@ const Contact = () => {
     console.log("function called")
 };
     
+
 
 // const log = console.log('test')
 
