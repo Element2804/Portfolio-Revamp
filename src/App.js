@@ -29,7 +29,7 @@ const App = () => {
      </header>
    <main>
     <Routes>
-    <Route exact path="/" element={<About/>} />
+    <Route exact path="/Portfolio-Revamp" element={<About/>} />
     <Route path="contact" element={<Contact/>}/>
     <Route path="portfolio" element={<Portfolio/>}/>
     <Route path="resume" element={<Resume/>}/>
