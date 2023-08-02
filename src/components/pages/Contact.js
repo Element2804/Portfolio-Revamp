@@ -6,23 +6,34 @@ import { validateEmail } from "../../utils/helpers";
 
 const Contact = () => {
 //states for all inputs
-    const [email, setEmail] = useState ('');
-    const [name, setName] = useState ('');
-    const [message, setMessage] = useState ('');
-    const [errorMessage, setErrorMessage] = useState('');
+const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+const { name, email, message } = formState;
+
+const [errorMessage, setErrorMessage] = useState('');
+
+
 
 
     const formChange = (e) => {
-        const {target} = e;
-        const inputVal = target.value;
-        const inputType = target.name;
+        if (e.target.name === 'email') {
+            const isValid = validateEmail(e.target.value);
+    
+                if(!isValid) {
+                    setErrorMessage('please enter a valid email');
+                } else {
+                    setErrorMessage('');
+                }
 
-        if(inputType === "email"){
-            setEmail(inputVal);
-        } else if (inputType === "name"){
-            setName(inputVal);
-        } else {
-            setMessage(inputVal)
+            } else {
+                if (!e.target.value.length) {
+                  setErrorMessage(`${e.target.name} is required.`);
+                } else {
+                  setErrorMessage('');
+                } 
+        }
+
+        if (!errorMessage) {
+        setFormState({...formState, [e.target.name]: e.target.value })
         }
     };
     
@@ -30,26 +41,9 @@ const Contact = () => {
     const submitForm = (e) => {
         //stops pages refresh on submit
         e.preventDefault();
-
-        if(!validateEmail(email) || !name){
-            setErrorMessage('Please enter a valid email address.');
-            return;
-        }
-       if (!setMessage(message = "")){
-        setErrorMessage("Message form can't be blank");
-        return;
-    }
-
-    setName('');
-    setEmail('');
-    setMessage('');
-    console.log("function called")
-};
-    
-
-
-// const log = console.log('test')
-
+setErrorMessage("Thank you for the message")
+        setFormState("");
+    }      
 
     return ( 
 <section className="contact">
@@ -58,15 +52,15 @@ const Contact = () => {
     <form className="forms">
         <label>
             <span>Name</span>
-            <input value={name} onChange={formChange} type="text" name="name" />
+            <input defaultValue={name} onBlur={formChange} type="text" name="name" />
         </label>
         <label>
             <span>Email</span>
-            <input value={email} onChange={formChange} type="email" name="email" placeholder="Email"/>
+            <input defaultValue={email} onBlur={formChange} type="email" name="email" placeholder="Email"/>
         </label>
         <label>
             <span>Message</span>
-            <input value={message} onChange={formChange} type="text" name="message"/>
+            <input className="message" defaultValue={message} onBlur={formChange} type="text" name="message"/>
         </label>
        
         <button type="button" onClick={submitForm}>Submit</button>
