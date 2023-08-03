@@ -1,9 +1,6 @@
 import React, {useState} from "react";
 import { validateEmail } from "../../utils/helpers";
 
-
-
-
 const Contact = () => {
 //states for all inputs
 const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -11,9 +8,7 @@ const { name, email, message } = formState;
 
 const [errorMessage, setErrorMessage] = useState('');
 
-
-
-
+// uses helper function to valid email through the "onBlur" event.
     const formChange = (e) => {
         if (e.target.name === 'email') {
             const isValid = validateEmail(e.target.value);
@@ -35,9 +30,8 @@ const [errorMessage, setErrorMessage] = useState('');
         if (!errorMessage) {
         setFormState({...formState, [e.target.name]: e.target.value })
         }
-    };
+    };    
     
-
     const submitForm = (e) => {
         //stops pages refresh on submit
         e.preventDefault();
@@ -61,10 +55,8 @@ setErrorMessage("Thank you for the message")
         <label>
             <span>Message</span>
             <input className="message" defaultValue={message} onBlur={formChange} type="text" name="message"/>
-        </label>
-       
-        <button type="button" onClick={submitForm}>Submit</button>
-        
+        </label>       
+        <button type="button" onClick={submitForm}>Submit</button>        
     </form>
     <div>
         <p className="error">{errorMessage}</p>
@@ -72,7 +64,6 @@ setErrorMessage("Thank you for the message")
 
 </section>
      );
-
 
 } // end Contact bracket
  

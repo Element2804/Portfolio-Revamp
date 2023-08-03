@@ -1,18 +1,11 @@
 import {BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
-
+// footer component import
 import Footer from "./components/Footer";
-
-// pages
+// page imports
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import Portfolio from "./components/pages/Portfolio";
 import Resume from "./components/pages/Resume";
-
-
-
-
- 
-
 	
 const App = () => {
   return (  
@@ -38,11 +31,7 @@ const App = () => {
   <footer>
     <Footer/>
   </footer>
-</BrowserRouter>
-
-   
-   
-  
+</BrowserRouter>   
    );
 }
  

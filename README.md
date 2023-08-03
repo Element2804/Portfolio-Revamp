@@ -15,10 +15,11 @@ This application is covered under the MIT license. <br>
 
 ## Installation
 
-To install, fork the repository and navigate to the command line then type `npm i`. After that type `npm start`
+Install `Node Js` fork the repository and navigate to the command line. Then run `npm i`. After that type `npm start`
 
 
 ## Usage
+Follow this link to browse my portfolio https://element2804.github.io/Portfolio-Revamp/
 ![image](https://github.com/Element2804/Social-API/assets/103654389/11bde396-ba02-4167-9214-8829a4971882)
 
 
