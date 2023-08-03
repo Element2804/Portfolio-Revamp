@@ -1,6 +1,5 @@
 
 
-
 const Resume = () => {
     return ( 
         <section>
