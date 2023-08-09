@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/Portfolio-Revamp/static/css/main.f1c47440.css",
-    "main.js": "/Portfolio-Revamp/static/js/main.421076b8.js",
+    "main.js": "/Portfolio-Revamp/static/js/main.192e12e8.js",
+    "static/media/Gulpco.png": "/Portfolio-Revamp/static/media/Gulpco.921ae2d2e3d83e598e75.png",
     "static/media/profile.jpeg": "/Portfolio-Revamp/static/media/profile.218efe2d493bd957ed2e.jpeg",
     "static/media/Personnel.png": "/Portfolio-Revamp/static/media/Personnel.0d3680d53b897ed09d6e.png",
     "static/media/PWgen.png": "/Portfolio-Revamp/static/media/PWgen.eaf898ec1e9d6bc5932d.png",
     "static/media/RESUME.pdf": "/Portfolio-Revamp/static/media/RESUME.0424ef442ef11ed38c81.pdf",
     "index.html": "/Portfolio-Revamp/index.html",
     "main.f1c47440.css.map": "/Portfolio-Revamp/static/css/main.f1c47440.css.map",
-    "main.421076b8.js.map": "/Portfolio-Revamp/static/js/main.421076b8.js.map"
+    "main.192e12e8.js.map": "/Portfolio-Revamp/static/js/main.192e12e8.js.map"
   },
   "entrypoints": [
     "static/css/main.f1c47440.css",
-    "static/js/main.421076b8.js"
+    "static/js/main.192e12e8.js"
   ]
 }
