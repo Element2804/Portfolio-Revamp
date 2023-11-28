@@ -1,4 +1,8 @@
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+//nav
+import Nav from './components/Nav/index.js'
+
 // footer component import
 import Footer from "./components/Footer";
 // page imports
@@ -9,15 +13,9 @@ import Resume from "./components/pages/Resume";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <header>
-        <nav>
-          <h1>William Faries</h1>
-          <NavLink to="/">About</NavLink>
-          <NavLink to="portfolio">Portfolio</NavLink>
-          <NavLink to="contact">Contact</NavLink>
-          <NavLink to="resume">Resume</NavLink>
-        </nav>
+     <Nav />
       </header>
       <main>
         <Routes>
@@ -31,7 +29,7 @@ const App = () => {
       <footer>
         <Footer />
       </footer>
-    </BrowserRouter>
+    </Router>
   );
 };
 
