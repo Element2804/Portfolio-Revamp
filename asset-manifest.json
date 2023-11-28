@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Portfolio-Revamp/static/css/main.f1c47440.css",
-    "main.js": "/Portfolio-Revamp/static/js/main.192e12e8.js",
+    "main.css": "/Portfolio-Revamp/static/css/main.da164c64.css",
+    "main.js": "/Portfolio-Revamp/static/js/main.9c95be23.js",
     "static/media/Gulpco.png": "/Portfolio-Revamp/static/media/Gulpco.921ae2d2e3d83e598e75.png",
+    "static/media/FinalResume.pdf": "/Portfolio-Revamp/static/media/FinalResume.fe3648b3f02a63ca87a5.pdf",
     "static/media/profile.jpeg": "/Portfolio-Revamp/static/media/profile.218efe2d493bd957ed2e.jpeg",
     "static/media/Personnel.png": "/Portfolio-Revamp/static/media/Personnel.0d3680d53b897ed09d6e.png",
     "static/media/PWgen.png": "/Portfolio-Revamp/static/media/PWgen.eaf898ec1e9d6bc5932d.png",
-    "static/media/RESUME.pdf": "/Portfolio-Revamp/static/media/RESUME.0424ef442ef11ed38c81.pdf",
     "index.html": "/Portfolio-Revamp/index.html",
-    "main.f1c47440.css.map": "/Portfolio-Revamp/static/css/main.f1c47440.css.map",
-    "main.192e12e8.js.map": "/Portfolio-Revamp/static/js/main.192e12e8.js.map"
+    "main.da164c64.css.map": "/Portfolio-Revamp/static/css/main.da164c64.css.map",
+    "main.9c95be23.js.map": "/Portfolio-Revamp/static/js/main.9c95be23.js.map"
   },
   "entrypoints": [
-    "static/css/main.f1c47440.css",
-    "static/js/main.192e12e8.js"
+    "static/css/main.da164c64.css",
+    "static/js/main.9c95be23.js"
   ]
 }
