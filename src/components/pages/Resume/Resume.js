@@ -14,7 +14,7 @@ const Resume = () => {
             <li>ExpressJS</li>
             <li>React</li>
         </ul>
-        <a href={require("../../components/file/RESUME.pdf")} download>
+        <a href={require("../../../components/file/RESUME.pdf")} download>
         <button>Download Resume</button>
         </a>
             </section>

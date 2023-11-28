@@ -1,21 +1,21 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //nav
-import Nav from './components/Nav/index.js'
+import Nav from "./components/Nav/index.js";
 
 // footer component import
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer.js";
 // page imports
-import About from "./components/pages/About";
-import Contact from "./components/pages/Contact";
-import Portfolio from "./components/pages/Portfolio";
-import Resume from "./components/pages/Resume";
+import About from "./components/pages/About/About.js";
+import Contact from "./components/pages/Contact/Contact.js";
+import Portfolio from "./components/pages/Portfolio/Portfolio.js";
+import Resume from "./components/pages/Resume/Resume.js";
 
 const App = () => {
   return (
     <Router>
       <header>
-     <Nav />
+        <Nav />
       </header>
       <main>
         <Routes>
